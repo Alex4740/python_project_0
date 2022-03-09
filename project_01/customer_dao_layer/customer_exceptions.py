@@ -2,3 +2,7 @@
 
 class NumNotFound(Exception):
     pass
+
+class BadCustomerInfo(Exception):
+    pass
+
