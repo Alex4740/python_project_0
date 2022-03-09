@@ -6,7 +6,7 @@ from project_01.customer_dao_layer.customer_exceptions import BadCustomerInfo
 customer_dao = CustomerDAOImp
 customer_service = CustomerServiceImp(customer_dao)
 
-def catch_first_name_to_long_create():
+def test_catch_first_name_to_long_create():
     customer = Customer(0, 1, "this is to long", 1000)
     try:
         customer_service.service_create_customer(customer)
@@ -16,13 +16,6 @@ def catch_first_name_to_long_create():
 
 def test_catch_last_name_to_long_create():
     customer = Customer(0, 1, "this is fine", "this is too long last name", 1000)
-    try:
-        customer_service.service_create_customer(customer)
-        assert False
-    except BadCustomerInfo as e:
-        assert str(e) == "Last name is too long"
-def test_catch_non_positive_account_balance():
-    customer = Customer(0, 1, "account_balance")
     try:
         customer_service.service_create_customer(customer)
         assert False
