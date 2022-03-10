@@ -1,0 +1,4 @@
+my access layer to handle my user stories
+if I want to create account to my customer, I want to see customer information, or to update the customer informatio
+or to remove or delete customer account, I will use CURD.
+
