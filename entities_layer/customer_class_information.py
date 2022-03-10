@@ -1,0 +1,19 @@
+class Customer:
+    def __init__(self, last_name:str, first_name:str, customer_id:int, address:str):
+        self.last_name = last_name
+        self.first_name = first_name
+        self.customer_id = customer_id
+        self.address = address
+
+
+"""
+what customers have in reality
+
+customers have name
+customers have id
+customers have birth date
+customers have address
+customers have phone number
+
+for this application i will depend on name, id number, and address.
+"""
