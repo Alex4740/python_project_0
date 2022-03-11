@@ -4,13 +4,6 @@ class Account:
         self.account_num = account_num
         self.account_balance = account_balance
     
-    
-    def convert_to_dictionary(self):
-        return {
-            "accountNum": self.account_num,
-            "accountName": self.account_name,
-            "accountBalance": self.account_balance
-        }
 
 # what account is made of
 """
